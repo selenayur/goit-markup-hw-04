@@ -70,9 +70,8 @@ img {
     border-bottom: 1px solid #E7E9FC;
 }
 
-.header-add {
 
-}
+
 .header-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
@@ -143,6 +142,8 @@ img {
     background-position: center;
     background-size: cover;
     width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-title {
     font-weight: 700;
@@ -187,7 +188,7 @@ img {
     gap: 24px;
 }    
 .advant-list .item {
-    width: 264px;  
+    width: calc((100%-72px)/4);  
     margin: 0 auto;
 }    
 .advant-title {
@@ -206,17 +207,14 @@ img {
     letter-spacing: 0.02em;
     color: var(--text-color); 
 }
-.advant-icon {
-    display: flex;
-    margin: auto;
 
-    
-}
 .advant-div-icon {
-    padding-bottom: 24px;
-    padding-top: 24px;
+    display: flex;
+    height: 112px;
     background: #F4F4FD;
 border-radius: 4px;
+justify-content: center;
+align-items: center;
 }
 
 /**!-------------------------DOINGT----------------------------!*/
@@ -339,17 +337,16 @@ border-radius: 4px;
     justify-content: center;
     gap: 24px;
 }
-
+.customers-item {
+    width: calc((100%-120px)/6); 
+}
 .customer-link { 
     display: flex;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-right: 32px;
-    padding-left: 32px;
+    
     border: 1px solid #8E8F99;
     border-radius: 4px;
     width: 100%;
-    height: 100%;
+    height: 88px;
     align-items: center;
     justify-content: center;
 }
@@ -487,11 +484,16 @@ margin-top: 120px;
     row-gap: 48px;
     column-gap: 24px; 
 }
+
+.projects-link {
+    display: block;
+    
+}
 .projects-btn:hover, .projects-btn:focus {
     background: var(--color-hover);
     color: var(--btn-text-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border: 0ch;
+    border-color: var(--color-hover);
 }
 .projects-list-title {
     font-weight: 500;
@@ -515,6 +517,6 @@ margin-top: 120px;
     border-top: none; 
     padding-left: 16px;
 }
-.projects-list-item:hover, .projects-list-item:focus {
+.projects-link:hover, .projects-link:focus {
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
